@@ -1,0 +1,9 @@
+div {
+	margin:0 auto;
+}
+p {
+	color:#888;
+}
+p:first-child {
+	color:#222;
+}
