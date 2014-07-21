@@ -1,0 +1,73 @@
+body > div {
+	margin:20px auto;
+	padding:2px;
+	position:relative;
+	width:1006px;
+	height:546px;
+	background-color:#fff;
+}
+div#container {
+	margin:0 auto;
+	position:relative;
+	width:100%;	
+	height:540px;
+	overflow:hidden;
+}
+div#container div {
+	padding:12px;
+	position:absolute;
+	left:1016px;
+	width:1000px;
+	height:540px;
+	overflow:hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+#container h1 {
+	display:inline-block;
+	margin:0 0 24px;
+	position:static;
+	width:100%;
+	font-size:38pt;
+	background:#ebebeb;
+	box-shadow:0 0 0 12px #ebebeb;
+}
+.nav {
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:252px;
+	width:23px;
+	height:40px;
+	background-image:url('controls.png');
+	cursor:pointer;
+	opacity:0.4;
+	transition:all ease .2s;
+	-webkit-transition:all ease .2s;
+	-moz-transition:all ease .2s;
+}
+.nav:hover {
+	opacity:0.75;
+}
+.nav.l {
+	left:-30px;
+}
+.nav.r {
+	right:-30px;
+	background-position:23px 0;
+}
+
+/* Mein */
+p {
+	margin:10px 10px 12px;
+	width:60%;
+	/*float:left;*/
+	text-align:left;
+	font-size:18pt;
+	font-weight:bold;
+	line-height:140%;
+}
+p:last-child {
+	font-size:10pt;
+	font-weight:normal;
+}

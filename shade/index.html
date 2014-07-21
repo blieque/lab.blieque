@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<link rel="stylesheet" type="text/css" href="http://c632769.r69.cf2.rackcdn.com/hcc_015.css" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Html Color Codes</title>
+		<meta name="description" content="Get HTML color codes for your website. Color chart, color picker and color palettes." />
+		<META NAME="keywords" content="html, color, codes, chart, picker, hex">
+		<link rel="shortcut icon" href="http://c632769.r69.cf2.rackcdn.com/favicon.ico" type="image/x-icon" />
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-814714-1']);
+	  _gaq.push(['_trackPageview']);
+	  
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	var rndnum = Math.random();  
+	</script>
+	</head>
+	<body>
+		<h2>HTML Color Picker</h2>
+		<p>Move the vertical slider to chose color and then click into color square on the left to get 
+		<b>HTML color code</b> for desired color cast.</p>
+		<p>You can start with your own color by writing its color code in upper input field.</p>
+
+		<div id="insertcolor">
+		Insert your color code:
+		<input type="text" maxlength="7" value="FFFFFF" id="startcolor" name="startcolor">
+		<button id="newcolor">GO</button>
+		</div>
+		<div id="container"></div>
+		<script type="text/javascript" src="http://c632769.r69.cf2.rackcdn.com/cpcc_002.js"></script>
+		<script type="text/javascript" language="javascript">
+		(function() {
+			var Event = YAHOO.util.Event, picker, hexcolor;
+			
+			Event.onDOMReady(function() {
+			picker = new YAHOO.widget.ColorPicker("container", {
+				showhsvcontrols: true,
+				showhexcontrols: true,
+				showwebsafe: false });
+				picker.skipAnim=true;	
+				var onRgbChange = function(o) {
+					setTimeout ("document.getElementById('yui-picker-hex').select()", 50);
+				}
+				picker.on("rgbChange", onRgbChange);
+				Event.on("newcolor", "click", function(e) {
+					hexcolor = cc(document.getElementById('startcolor').value);
+					picker.setValue([HexToR(hexcolor), HexToG(hexcolor), HexToB(hexcolor)], false); 
+				});
+			});
+		})();
+		</script>
+		<div id="insertcolor">
+		Click to put the color on the list below:
+		<button id="newcolor" onclick="CPklik()">On the list</button>
+		</div>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- BelowColorPicker -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:728px;height:90px"
+		     data-ad-client="ca-pub-6483924506584584"
+		     data-ad-slot="8304431024"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		<p>Below is a list of recently picked colors. To store HTML color for your next visit click on its pin.</p>
+		<div ID="CP" class="wrapper"></div>
+
+		<script type="text/javascript">
+			document.write("<sc"+"ript type='text/javas"+"cript'>(function() { ChartLoadEvent();})(); </scri"+"pt>");
+
+			function httpGet(theUrl) {
+				var xmlHttp = null;
+
+				xmlHttp = new XMLHttpRequest();
+				xmlHttp.open( "GET", theUrl, false );
+				xmlHttp.send( null );
+				return xmlHttp.responseText;
+			}
+		</script>
+	</body>
+</html>
