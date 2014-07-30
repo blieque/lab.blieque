@@ -182,7 +182,10 @@ input:not([type="radio"]):not([type="checkbox"]),select,.btn {
 input:not([type="radio"]):not([type="checkbox"]):focus,select:focus,.btn:focus {
 	outline:none;
 	border-color:#69af98;
-	box-shadow:0 0 0 2px rgba(117,195,170,.2);
+	box-shadow:0 0 0 2px rgba(122,204,178,.2);
+}
+input.n:not([type="radio"]):not([type="checkbox"]):focus,select.n:focus,.btn.n:focus {
+	box-shadow-color:rgba(204,91,61,.2);
 }
 select {
 	height:32px;
@@ -204,7 +207,7 @@ select:active {
 .btn,[type="submit"] {
 	margin:0 auto 1em;
 	padding:1em;
-	border:solid 1px #69af98!important;
+	border:solid 1px #69af98;
 	box-shadow:0 0 0 0 rgba(255,165,0,0.2);
 }
 .btn:hover,[type="submit"]:hover {
@@ -212,6 +215,21 @@ select:active {
 }
 .btn:active,[type="submit"]:active {
 	box-shadow:inset 0 0 0 2px rgba(255,255,255,.6);
+}
+.btn.n,[type="submit"].n {
+	background-color:#cc5b3d;
+	border-color:#af4e34;
+	text-shadow:0 1px 0 #af4e34;
+}
+.btn.n:hover,[type="submit"].n:hover {
+	background-color:#c3563a;
+}
+.btn.il,[type="submit"].il,.btn.il+*,[type="submit"].il+* {
+	display:inline-block;
+	width:calc(50% - 16px);
+}
+.btn.il,[type="submit"].il {
+	margin-right:16px;
 }
 input[type="checkbox"],input[type="radio"] {
 	margin:5px 6px -1px 0;

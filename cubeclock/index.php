@@ -56,10 +56,11 @@
 </div><div>
 
 <h3>Calculate Averages</h3>
-<p>Will allow calculation of best-of-three and best-of-five averages.</p>
 <form>
 	<label><input type="radio" name="a" value="3">Best of three</label>
 	<label><input type="radio" name="a" value="5">Best of five</label>
 </form>
+<div id="vs" class="btn il">Start</div>
+<div id="vc" class="btn n">Cancel</div>
 
 <?php lab_close()?>
