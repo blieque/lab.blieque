@@ -224,11 +224,12 @@ select:active {
 .btn.n:hover,[type="submit"].n:hover {
 	background-color:#c3563a;
 }
-.btn.il,[type="submit"].il,.btn.il+*,[type="submit"].il+* {
+.il,.il+* {
 	display:inline-block;
-	width:calc(50% - 16px);
+	margin:0;
+	width:calc(50% - 8px);
 }
-.btn.il,[type="submit"].il {
+.il {
 	margin-right:16px;
 }
 input[type="checkbox"],input[type="radio"] {
@@ -236,7 +237,7 @@ input[type="checkbox"],input[type="radio"] {
 	height:13px;
 	width:13px;
 	background-image:url('img/s.svg');
-	outline:none !important;
+	outline:none!important;
 }
 input[type="checkbox"]:hover,input[type="radio"]:hover {
 	background-position:-14px 0;
