@@ -1,3 +1,21 @@
+// temp
+var bC	= {firstTime:true,time:null,list:[],go:function(){
+	if (bC.firstTime) {
+		bC.firstTime = false;
+		return "basic clock function. call again to start, and once more to stop. can be repeated. scores logged to bC.list[].";
+	} else {
+		if (bC.time == null) {
+			bC.time = Date.now();
+			return "started";
+		} else {
+			var time = (Date.now() - bC.time) / 1000;
+			bC.list.push(time);
+			bC.time = null;
+			return time + " seconds";
+		}
+	}
+}};
+
 // cubeclock
 // creation of @blieque's
 
