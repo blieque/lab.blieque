@@ -1,4 +1,4 @@
-<?php define('included',1);include'../_cgi-bin/builder.php';lab_open('Cubeclock',"520x2",1,1,'cc','A friend of mine became interested in Rubik\'s cubes and solving them in the quickest times.','<!--[if IE]><script type="text/javascript">isIE = 1</script><![endif]--><script src="../js/fc.min.js\"></script>'); ?>
+<?php define('included',1);include'../_cgi-bin/builder.php';lab_open('Cubeclock',"520x2",1,1,'cc','A friend of mine became interested in Rubik\'s cubes and solving them in the quickest times.','<!--[if IE]><script type="text/javascript">isIE=1</script><![endif]--><script src="../js/fc.min.js"></script>'); ?>
 
 <div id="t">00:00.00</div>
 <span id="b" class="btn">Start</span>
