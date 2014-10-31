@@ -270,3 +270,5 @@ $CONFIG['version'] = '1.4.3';
 //---PRESERVE ME---
 // Anything below this line will be preserved when the admin control panel rewrites
 // the settings. Useful for storing settings that don't/can't be changed from the control panel
+
+$adminDetails['admin'] = '68c2d1aa5bff1b7b196e9deb81ac286f';
