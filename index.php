@@ -16,4 +16,4 @@
 </ul>
 <p><span>wip</span> = work in progress; the ones I'm slacking on.</p>
 
-</section><footer><?php include"../_cgi-bin/cr.php";echo copyright(1,2012,0); ?></footer></body></html>
+</section><footer><?php include"../include/cr.php";echo copyright(1,2012,0); ?></footer></body></html>

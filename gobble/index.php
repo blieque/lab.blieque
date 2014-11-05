@@ -1,4 +1,4 @@
-﻿<?php define('included',1);include'../_cgi-bin/builder.php';lab_open("Gobble",300,1,3,"gobble","A simple game in which the player controls a small square. The objective is to gain points at a faster rate than they deplete. The points drain more and more quickly, but so do the opportunites to regain them.") ?>
+﻿<?php define('included',1);include'../include/builder.php';lab_open("Gobble",300,1,3,"gobble","A simple game in which the player controls a small square. The objective is to gain points at a faster rate than they deplete. The points drain more and more quickly, but so do the opportunites to regain them.") ?>
 
 <div id="board">
 	<p id="help" onClick="switchHelp()" style="top:0px">

@@ -1,0 +1,60 @@
+/* metrics and positioning */
+#board {
+	position:relative;
+	height:600px;
+	border:solid 1px #d6d6d6;
+	overflow:hidden;
+}
+.row {
+	position:absolute;
+	top:480px;
+	height:120px;
+	z-index:1;
+}
+.cell {
+	display:inline-block;
+	width:100px;
+	height:120px;
+}
+
+.score {
+	position:absolute;
+	right:0;
+	left:0;
+	color:#fff;
+	background:rgba(0,0,0,.4);
+	font-size:20pt;
+	font-weight:bold;
+	text-shadow:0 1px 2px rgba(0,0,0,.6);
+	text-align:center;
+	z-index:1;
+}
+
+/* row colouring */
+.start {
+	background:#edb219;
+}
+
+/* cell transition/colouring */
+.cell {
+	box-shadow:inset 0 0 0 1px #d6d6d6;
+	-webkit-transition:all ease 150ms;
+	transition:all ease 150ms;
+}
+.start .cell {
+	box-shadow:none;
+}
+.black {
+	background:#121212;
+	box-shadow:inset 0 0 0 8px #0c0c0c;
+}
+.grey {
+	background:#808080;
+}
+.red {
+	background:#d53e2a;
+	box-shadow:inset 0 0 0 8px rgba(0,0,0,.1);
+}
+.redscore {
+	background:rgba(213,62,42,.6);
+}

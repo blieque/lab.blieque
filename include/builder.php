@@ -13,9 +13,9 @@ if (defined('included')) {
 			$width_col[0] *= $width_col[1];
 			$width_col = "calc(" . $width_col[0] . "px + " . ($width_col[1] - 1) . "em)";
 		} else {
-			$width_col = $width_col[0] . "px";
+			$width = $width_col[0] . "px";
 		}
-		$open .= '<style type="text/css">body>div{width:' . $width_col . '}.c{width:' . $width . '}</style>';
+		$open .= '<style type="text/css">body>div{width:' . $width . '}.c{width:' . $width . '}</style>';
 
 		if ($unique_style == 1) {
 			$open .= '<link rel="stylesheet" type="text/css" href="main.css">';
@@ -25,7 +25,8 @@ if (defined('included')) {
 			case 0: // No JavaScript
 				break;
 			case 1: // jQuery and named script (relative)
-				$open .= '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="jquery.'.$script.'.js"></script>';
+				//$open .= '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="jquery.'.$script.'.js"></script>';
+				$open .= '<script src="/js/jquery.min.js"></script><script src="jquery.'.$script.'.js"></script>';
 				break;
 			case 2: // jQuery and named script (common)
 				$open .= '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="../js/jquery.'.$script.'.js"></script>';

@@ -1,4 +1,4 @@
-<?php define('included',1);include'../_cgi-bin/builder.php';lab_open("Shift",203,1,1,"shift")?>
+<?php define('included',1);include'../include/builder.php';lab_open("Shift",203,1,1,"shift")?>
 
 <div id="board">
 	<div>1</div>

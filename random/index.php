@@ -1,4 +1,4 @@
-<?php define('included',1);include'../_cgi-bin/builder.php';lab_open("Random",300,1,1,"random","<p>An advancement of lab.Die, this application allows you to enter values of your own, and let JavaScript pick one by random. You can also load presets, and save your own using the HTML5 <code>localstorage</code> API.</p><h3>Keyboard Shortcuts</h3><table class=\"micro\"><tr><td>r/space</td><td>run</td></tr><tr><td>return/enter</td><td>confirm</td></tr><tr><td>a</td><td>add value</td></tr><tr><td>s</td><td>save preset</td></tr></table>"); ?>
+<?php define('included',1);include'../include/builder.php';lab_open("Random",300,1,1,"random","<p>An advancement of lab.Die, this application allows you to enter values of your own, and let JavaScript pick one by random. You can also load presets, and save your own using the HTML5 <code>localstorage</code> API.</p><h3>Keyboard Shortcuts</h3><table class=\"micro\"><tr><td>r/space</td><td>run</td></tr><tr><td>return/enter</td><td>confirm</td></tr><tr><td>a</td><td>add value</td></tr><tr><td>s</td><td>save preset</td></tr></table>"); ?>
 
 <form>
 	<input type="text" placeholder="Value to add" class="submit-inline">
