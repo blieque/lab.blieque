@@ -9,12 +9,17 @@ var keybind	= [65, 88, 77, 76, 72, 74, 75, 76]	// axml, hjkl (ermahgerd derplerc
 	started	= false,
 	tiles	= [],
 	score	= 0,
-	failed	= 0;
+	failed	= 0,
+	highScore	= localStorage["highScore"] == null ? 0 : localStorage["highScore"];
 
 
 // functions
 
 function move(column) {
+
+	if (failed) {
+		return;
+	}
 
 	if (!started) {
 		started	= true;
@@ -51,7 +56,7 @@ function move(column) {
 		score += 1 + rand(Math.sqrt(score)) * rand(10);
 		comedy();									// it is a game after all
 
-		$(".score").html(score);
+		$("#score").html(score);
 
 	} else {
 
@@ -87,21 +92,41 @@ function fail() {
 	started	= false;
 	failed	= true;
 
-	$(".score").addClass("redscore");
+	$("#failscore").addClass("redscore");
+	$("#failscore").addClass("redscore");
 
 	setTimeout(function(){
 		if (confirm("You failed with a score of " + score + ". Could be worse..\n\nClick OK to refresh.")) {
 			window.location.reload();
 		}
-	})
+	},500);
+
+	// save highscore if highscore
+	if (score > highScore) {
+		highScore = localStorage["highScore"] = score;
+	}
+
+	$("#score,#failscore").html(score);					// two birds with a lone stone
+	$("#highscore").html(highScore);
+	$("#failbox").animate({display:"block",opacity:1},500);
 
 }
 
-function comedy() {
-	
+function restart() {
+
+	$("#failbox").animate({opacity:0},300,function(){
+		css("display", "none")
+	});
+	$("#failbox").css("display", "none");
+
+	score	= 0;
+	$("#score").html(0);
+		
 }
 
 function init() {
+
+	$("#failbox").css("display", "none");
 
 	for (var i = 5; i >= 0; i--) {
 
@@ -112,18 +137,16 @@ function init() {
 
 }
 
+function comedy() {
+	
+}
+
 
 // jquery call
 
 $(function(){
 
 	init();
-
-	$("input:radio").on("change",function(){
-
-		kbInUse = $("input:checked").val();			// move requested keymap to keybind.inUse
-
-	});
 
 	$("body").on("keydown",function(e){
 
